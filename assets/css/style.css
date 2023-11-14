@@ -1,0 +1,140 @@
+nav ol li a {
+  color: #7367F0;
+}
+
+/* Image Select And Change */
+.thumbnail {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  position: relative;
+}
+.thumbnail .image {
+  position: relative;
+}
+.thumbnail .image .imagePreview {
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; */
+  display: none;
+}
+.thumbnail .image img {
+  width: 120px;
+  height: 100px;
+  display: block;
+  box-shadow: 0 10px 19px rgba(139, 139, 139, 0.15);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.thumbnail .image .remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 10px;
+  color: tomato;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.thumbnail .image .remove-btn:hover {
+  background-color: tomato;
+  color: #fff;
+}
+.thumbnail button {
+  border: 1px solid #ddd;
+  color: #135e96;
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.thumbnail button:hover {
+  border: 1px solid #135e96;
+}
+
+.service-wrap .services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+  padding: 40px 0;
+}
+.service-wrap .services .service {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  /* background-color: #222; */
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.service-wrap .services .service::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 0%;
+  background-color: #ff5757;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+}
+.service-wrap .services .service:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.service-wrap .services .service:hover::before {
+  width: 100%;
+}
+.service-wrap .services .service .content {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-wrap .services .service .content .image {
+  height: 350px;
+  width: 100%;
+  background-color: #f6f6f6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.service-wrap .services .service .content .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 0 60% 60%;
+}
+.service-wrap .services .service .content .info {
+  height: 340px;
+  padding: 30px 30px 30px 20px;
+  text-align: center;
+}
+.service-wrap .services .service .content .info .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+.service-wrap .services .service .content .info .designation {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.service-wrap .services .service .content .actions {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */

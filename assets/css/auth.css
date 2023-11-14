@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Public Sans, sans-serif, -apple-system, blinkmacsystemfont, Segoe UI, roboto, Helvetica Neue, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol;
+  background: #f8f7fa;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.success-msg {
+  color: #21a817;
+  margin-bottom: 8px;
+}
+
+/* Authentication */
+.auth-form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form .form-data {
+  max-width: 440px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 18px rgba(47, 43, 61, 0.1), 0 0 transparent, 0 0 transparent;
+  border-radius: 8px;
+  padding: 20px 0;
+}
+.auth-form .form-data form .text-danger {
+  color: tomato;
+}
+.auth-form .form-data form .head, .auth-form .form-data form .body, .auth-form .form-data form .foot {
+  padding: 16px 24px;
+}
+.auth-form .form-data form .head h1 {
+  text-align: center;
+}
+.auth-form .form-data form .head h1 img {
+  height: 80px;
+}
+.auth-form .form-data form .body .text-msg {
+  color: #777;
+  margin-bottom: 16px;
+  text-align: justify;
+  line-height: 22px;
+}
+.auth-form .form-data form .body .input-box {
+  margin-bottom: 20px;
+}
+.auth-form .form-data form .body .remeber {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.auth-form .form-data form .body .remeber .rem {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.auth-form .form-data form .foot button {
+  width: 100%;
+}
+.auth-form .form-data form .foot .acc-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.auth-form .form-data form .foot .acc-check a {
+  text-decoration: underline;
+}
+
+/* Image Select And Change */
+.thumbnail {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  position: relative;
+}
+.thumbnail .image {
+  position: relative;
+}
+.thumbnail .image .imagePreview {
+  display: none;
+}
+.thumbnail .image img {
+  width: 120px;
+  height: 100px;
+  display: block;
+  box-shadow: 0 10px 19px rgba(139, 139, 139, 0.15);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.thumbnail .image .remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 10px;
+  color: tomato;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.thumbnail .image .remove-btn:hover {
+  background-color: tomato;
+  color: #fff;
+}
+.thumbnail button {
+  border: 1px solid #ddd;
+  color: #135e96;
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.thumbnail button:hover {
+  border: 1px solid #135e96;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+input:focus,
+input:focus-within,
+select:focus,
+select:focus-within {
+  border: 1px solid #7367f0;
+  box-shadow: none;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+button {
+  display: block;
+  background-color: rgb(115, 103, 240);
+  color: #fff;
+  box-shadow: 0 3px 9px rgba(47, 43, 61, 0.15), 0 0 transparent, 0 0 transparent;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  transform: scale(1.001);
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+}
+button:hover {
+  background-color: rgb(104, 94, 219);
+}
+button:active {
+  box-shadow: 0 2px 6px rgba(47, 43, 61, 0.14), 0 0 transparent, 0 0 transparent;
+  transform: scale(0.98);
+}
+button.remove {
+  background-color: tomato;
+}
+button.remove:hover {
+  background-color: rgb(217, 86, 62);
+}/*# sourceMappingURL=auth.css.map */
