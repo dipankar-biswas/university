@@ -33,7 +33,8 @@ hr {
   display: none;
 }
 
-.site-overly.show {
+/* Overlay */
+.site-overlay.show {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -113,6 +114,7 @@ select:focus-within {
 .heading .title {
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 .heading .title::after {
   position: absolute;
@@ -173,19 +175,55 @@ select:focus-within {
   display: flex;
   justify-content: center;
 }
-#apps header .navigation .nav-items .item .text .link {
-  display: inline-block;
+#apps header .navigation .nav-items .item {
+  position: relative;
+}
+#apps header .navigation .nav-items .item:hover > .link, #apps header .navigation .nav-items .item.active > .link {
+  color: #cb6ce6;
+}
+#apps header .navigation .nav-items .item:hover .submenu, #apps header .navigation .nav-items .item.active .submenu {
+  top: 100%;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+#apps header .navigation .nav-items .item .link {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
   color: #444;
+  padding: 4px 12px;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
-#apps header .navigation .nav-items .item .text .link:hover, #apps header .navigation .nav-items .item .text .link.active {
-  color: #cb6ce6;
-}
-#apps header .navigation .nav-items .item .text .link .txt {
-  padding: 4px 12px;
+#apps header .navigation .nav-items .item .link .txt {
   font-size: 16px;
   font-weight: 600;
+}
+#apps header .navigation .nav-items .item .link .icon {
+  margin-top: 6px;
+}
+#apps header .navigation .nav-items .item .submenu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  z-index: 0;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  min-width: 200px;
+  width: 100%;
+  padding: 8px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+#apps header .navigation .nav-items .item .submenu .items .item .link {
+  padding: 6px 12px;
+  display: block;
 }
 #apps footer .footer-middle {
   background: #f2f2f2;
@@ -270,6 +308,76 @@ select:focus-within {
   .ph-lg-block {
     display: block;
   }
+  #apps header .logo-bar .mobile-bars .icon i {
+    font-size: 22px;
+  }
+  #apps header .logo-bar .logo {
+    justify-content: center !important;
+  }
+  #apps header .logo-bar .search i {
+    font-size: 22px;
+  }
+  #apps header .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+    width: 0;
+    height: 100% !important;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 -8px 4px rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+  }
+  #apps header .navigation.show {
+    width: 240px;
+  }
+  #apps header .navigation .container {
+    height: 100%;
+  }
+  #apps header .navigation .container .row {
+    height: 100%;
+  }
+  #apps header .navigation .container .row .nav-items {
+    flex-direction: column;
+    justify-content: start;
+  }
+  #apps header .navigation .container .row .nav-items .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  #apps header .navigation .container .row .nav-items .head .title {
+    font-weight: 600;
+  }
+  #apps header .navigation .container .row .nav-items .head span {
+    font-size: 20px;
+    color: #fd5c5c;
+  }
+  #apps header .navigation .container .row .nav-items .item .link {
+    padding: 8px 10px;
+  }
+  #apps header .navigation .container .row .nav-items .item .submenu {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: none;
+    padding: 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  #apps header .navigation .container .row .nav-items .item .submenu .items .item .link {
+    padding: 6px 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .dt-md-none {
@@ -284,6 +392,18 @@ select:focus-within {
   .ph-md-block {
     display: block;
   }
+  #apps footer .footer-middle .widgets {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+  #apps footer .footer-middle .widgets .widget:nth-child(1) {
+    grid-column: span 3;
+  }
+  #apps footer .footer-middle .widgets .widget:nth-child(2), #apps footer .footer-middle .widgets .widget:nth-child(3) {
+    grid-column: span 1;
+  }
 }
 @media only screen and (max-width: 575px) {
   .dt-sm-none {
@@ -297,6 +417,13 @@ select:focus-within {
   }
   .ph-sm-block {
     display: block;
+  }
+  #apps .top-navbar .social {
+    -moz-column-gap: 6px !important;
+         column-gap: 6px !important;
+  }
+  #apps .top-navbar .social .item .link i {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 375px) {

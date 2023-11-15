@@ -21,7 +21,7 @@
         <div class="top-navbar">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-lg-6 col-md-6 col-sm-7 col-12">
+                    <div class="col-6">
                         <ul class="list-inline d-flex justify-content-start align-items-center h-100 column-gap-3">
                             <li class="item dropdown">
                                 <select class="form-select form-select-sm pt-0 pb-0 bg-transparent text-white" aria-label="Default select example">
@@ -31,7 +31,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-7 col-12">
+                    <div class="col-6">
                         <ul class="social d-flex justify-content-end align-items-center h-100 column-gap-3">
                             <li class="item">
                                 <a href="" class="link facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -62,7 +62,7 @@
                     <div class="row h-100">
                         <div class="col-3 dt-none ph-lg-block">
                             <div class="mobile-bars d-flex justify-content-start align-items-center h-100 column-gap-4">
-                                <div class="icon menu-slide-open-btn">
+                                <div class="icon aside-open">
                                     <i class="fa-solid fa-bars"></i>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 ph-lg-none">
                             <div class="d-flex justify-content-center align-items-center h-100 column-gap-3">
                                 <form action="" class="input-group h-search">
                                     <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
@@ -82,10 +82,17 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-3">
+                        <div class="col-lg-3 col-3 ph-lg-none">
                             <div class="d-flex justify-content-end align-items-center h-100 column-gap-4">
                                 <div class="apply">
                                     <a href="#" class="custom-btn text-white fw-bold rounded-3">Apply Online</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-3 dt-none ph-lg-block">
+                            <div class="d-flex justify-content-end align-items-center h-100 column-gap-4">
+                                <div class="search">
+                                    <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -97,61 +104,64 @@
                 <div class="container">
                     <div class="row">
                         <ul class="nav-items">
-                            <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link active" href="index.html">
-                                        <span class="txt">Home</span>
-                                    </a>
-                                </div>
+                            <div class="head dt-none ph-lg-block">
+                                <h4 class="title">Menu</h4>
+                                <span class="aside-close"><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                            <li class="item active">
+                                <a class="link" href="index.html">
+                                    <span class="txt">Home</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="link" href="#">
+                                    <span class="txt">About Us</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="link" href="#">
+                                    <span class="txt">Study Abroad</span>
+                                </a>
                             </li>
                             <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link" href="#">
-                                        <span class="txt">About Us</span>
-                                    </a>
+                                <a class="link" href="#">
+                                    <span class="txt">Our Services</span>
+                                    <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                                <div class="submenu">
+                                    <ul class="items">
+                                        <li class="item">
+                                            <a href="#" class="link">Career Counselling</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="link">University Admissions</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="link">Visa Consultancy</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="link">Accommodation Advice</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="link">Free Departure Briefing</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </li>
-                            <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link" href="#">
-                                        <span class="txt">Study Abroad</span>
-                                    </a>
-                                </div>
+                            <li class="item">
+                                <a class="link" href="#">
+                                    <span class="txt">Contacts</span>
+                                </a>
                             </li>
-                            <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link" href="#">
-                                        <span class="txt">Our Services</span>
-                                    </a>
-                                </div>
+                            <li class="item">
+                                <a class="link" href="#">
+                                    <span class="txt">Webmail</span>
+                                </a>
                             </li>
-                            <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link" href="#">
-                                        <span class="txt">Contacts</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link" href="#">
-                                        <span class="txt">Webmail</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="item tree">
-                                <div class="text">
-                                    <span class="icon"></span>
-                                    <a class="link" href="#">
-                                        <span class="txt">Support</span>
-                                    </a>
-                                </div>
+                            <li class="item">
+                                <a class="link" href="#">
+                                    <span class="txt">Support</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -272,7 +282,103 @@
             </div>
             <!-- Slider Code End -->
 
-            <!-- Section Code Start -->
+            <!-- Service Code Start -->
+            <section class="offer-wrap section-padding">
+                <div class="container">
+                    <div class="heading">
+                        <h2 class="title">Offers</h2>
+                    </div>
+                    <div class="offer-carousel">
+                        <div class="offers">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/versity/01.jpeg" alt="Versity">
+                                    <div class="offer-label">
+                                        <span class="txt">offer 20%</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
+                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/versity/04.jpeg" alt="Versity">
+                                    <div class="offer-label">
+                                        <span class="txt">offer 20%</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
+                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/versity/06.jpeg" alt="Versity">
+                                    <div class="offer-label">
+                                        <span class="txt">offer 20%</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
+                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/versity/07.jpeg" alt="Versity">
+                                    <div class="offer-label">
+                                        <span class="txt">offer 20%</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
+                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/versity/08.jpeg" alt="Versity">
+                                    <div class="offer-label">
+                                        <span class="txt">offer 20%</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
+                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/versity/09.jpeg" alt="Versity">
+                                    <div class="offer-label">
+                                        <span class="txt">offer 20%</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                                    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, autem neque. A laboriosam ipsam, numquam recusandae, enim consectetur repellat labore, inventore atque voluptate culpa earum ducimus quas natus aut molestiae?</p>
+                                    <a href="#" class="link"><span>More Details</span> <i class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <div id="left" class="icon left"><i class="fa-solid fa-angle-left"></i></div>
+                            <div id="right" class="icon right"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Service Code End -->
+
+            <!-- Service Code Start -->
             <section class="service-wrap section-padding">
                 <div class="container">
                     <div class="heading">
@@ -280,31 +386,154 @@
                     </div>
                     <div class="services">
                         <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
                             <div class="content">
-                                <div class="head"></div>
-                                <div class="info">
-                                    <h1 class="name">Web Development</h1>
-                                    <h5 class="designation">Development</h5>
-                                    <div class="step">
-                                        <p>Enrich IT</p>
-                                        <p>IT Department</p>
-                                        <p>sobkisubazar.com</p>
-                                        <p>BSC in CSE Green University</p>
-                                    </div>
-                                    <a class="phone" href="tel:+8801741571104"><i class="fa fa-phone" aria-hidden="true"></i> +8801741571104</a>
-                                    <a class="mail" href="mailto:dipankarbiswas.officials@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> dipankarbiswas.officials@gmail.com</a>
-                                    <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i> 271-Outer Circler road moghbazar, Dhaka-1217, BD</p>
-                                </div>
-                                <div class="actions">
-                                    <a href="#" class="btn action custom-btn1">Contact Us</a>
-                                </div>
+                                <h1 class="name"><a href="#" class="link">Web Development</a></h1>
+                                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus fugiat architecto animi quisquam reiciendis ipsam repudiandae ea officia officiis.</p>
+                                <a href="#" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">Web Development</a></h1>
+                                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus fugiat architecto animi quisquam reiciendis ipsam repudiandae ea officia officiis.</p>
+                                <a href="#" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">Web Development</a></h1>
+                                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus fugiat architecto animi quisquam reiciendis ipsam repudiandae ea officia officiis.</p>
+                                <a href="#" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">Web Development</a></h1>
+                                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus fugiat architecto animi quisquam reiciendis ipsam repudiandae ea officia officiis.</p>
+                                <a href="#" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">Web Development</a></h1>
+                                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus fugiat architecto animi quisquam reiciendis ipsam repudiandae ea officia officiis.</p>
+                                <a href="#" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">Web Development</a></h1>
+                                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus fugiat architecto animi quisquam reiciendis ipsam repudiandae ea officia officiis.</p>
+                                <a href="#" class="link"><span>Contact Now</span> <i class="fa-solid fa-angles-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Section Code End -->
+            <!-- Service Code End -->
 
+
+            <!-- University Code Start -->
+            <section class="universities-wrap section-padding">
+                <div class="container">
+                    <div class="heading">
+                        <h2 class="title">Our Partner's Universities & Colleges</h2>
+                    </div>
+                    <div class="universities">
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/01.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/02.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/03.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/04.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/05.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/06.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/07.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/08.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="assets/images/versity/09.jpeg" alt="Versity">
+                            </div>
+                            <div class="content">
+                                <h1 class="name"><a href="#" class="link">University Name</a></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- University Code End -->
 
         </div>
         <!-- Body Code End -->
@@ -397,6 +626,6 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/slide.js"></script>
-    <script type="text/javascript" src="assets/js/scroll-slide.js"></script>
+    <script type="text/javascript" src="assets/js/offer.js"></script>
 </body>
 </html>
