@@ -64,10 +64,13 @@ nav ol li a {
   border: 1px solid #135e96;
 }
 
-.offer-wrap .offer-carousel {
+.page-wrapper {
+  overflow: hidden;
+}
+.page-wrapper .offer-wrap .offer-carousel {
   position: relative;
 }
-.offer-wrap .offer-carousel .offers {
+.page-wrapper .offer-wrap .offer-carousel .offers {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc(33.3333333333% - 12px);
@@ -79,28 +82,28 @@ nav ol li a {
   scrollbar-width: none;
   padding: 40px 0;
 }
-.offer-wrap .offer-carousel .offers::-webkit-scrollbar {
+.page-wrapper .offer-wrap .offer-carousel .offers::-webkit-scrollbar {
   display: none;
 }
-.offer-wrap .offer-carousel .offers.no-transition {
+.page-wrapper .offer-wrap .offer-carousel .offers.no-transition {
   scroll-behavior: auto;
 }
-.offer-wrap .offer-carousel .offers.dragging {
+.page-wrapper .offer-wrap .offer-carousel .offers.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
-.offer-wrap .offer-carousel .offers.dragging .card {
+.page-wrapper .offer-wrap .offer-carousel .offers.dragging .card {
   cursor: grab;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-.offer-wrap .offer-carousel .offers :where(.item, .img) {
+.page-wrapper .offer-wrap .offer-carousel .offers :where(.item, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.offer-wrap .offer-carousel .offers .item {
+.page-wrapper .offer-wrap .offer-carousel .offers .item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,20 +117,20 @@ nav ol li a {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
-.offer-wrap .offer-carousel .offers .item:hover {
+.page-wrapper .offer-wrap .offer-carousel .offers .item:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.offer-wrap .offer-carousel .offers .item:hover .image img {
+.page-wrapper .offer-wrap .offer-carousel .offers .item:hover .image img {
   transform: scale(1.2);
 }
-.offer-wrap .offer-carousel .offers .item .image {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .image {
   display: flex;
   justify-content: center;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-.offer-wrap .offer-carousel .offers .item .image img {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .image img {
   width: 100%;
   max-height: 240px;
   height: 100%;
@@ -136,7 +139,7 @@ nav ol li a {
   transition: all 0.8s ease 0s;
   -webkit-transition: all 0.8s ease 0s;
 }
-.offer-wrap .offer-carousel .offers .item .image .offer-label {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .image .offer-label {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -151,7 +154,7 @@ nav ol li a {
   transform: rotate(-20deg);
   animation: beat 1s ease infinite alternate;
 }
-.offer-wrap .offer-carousel .offers .item .image .offer-label:before, .offer-wrap .offer-carousel .offers .item .image .offer-label:after {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .image .offer-label:before, .page-wrapper .offer-wrap .offer-carousel .offers .item .image .offer-label:after {
   content: "";
   position: absolute;
   background: inherit;
@@ -163,10 +166,10 @@ nav ol li a {
   transform: rotate(30deg);
   overflow: hidden;
 }
-.offer-wrap .offer-carousel .offers .item .image .offer-label:after {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .image .offer-label:after {
   transform: rotate(60deg);
 }
-.offer-wrap .offer-carousel .offers .item .image .offer-label .txt {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .image .offer-label .txt {
   transform: rotate(20deg);
   position: absolute;
   width: 100%;
@@ -183,7 +186,7 @@ nav ol li a {
     transform: rotate(-20deg) scale(1.1);
   }
 }
-.offer-wrap .offer-carousel .offers .item .content {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -196,7 +199,7 @@ nav ol li a {
   box-shadow: 0 -24px 16px 0 rgba(0, 0, 0, 0.05);
   padding: 12px 4px;
 }
-.offer-wrap .offer-carousel .offers .item .content .name .link {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content .name .link {
   display: flex;
   color: #444;
   font-size: 20px;
@@ -205,14 +208,14 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.offer-wrap .offer-carousel .offers .item .content .name .link:hover {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content .name .link:hover {
   color: #cb6ce6;
   letter-spacing: 0.5px;
 }
-.offer-wrap .offer-carousel .offers .item .content .txt {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content .txt {
   text-align: center;
 }
-.offer-wrap .offer-carousel .offers .item .content > .link {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content > .link {
   display: flex;
   align-items: center;
   -moz-column-gap: 8px;
@@ -225,10 +228,10 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.offer-wrap .offer-carousel .offers .item .content > .link:hover {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content > .link:hover {
   letter-spacing: 0.8px;
 }
-.offer-wrap .offer-carousel .offers .item .content > .link::before {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content > .link::before {
   position: absolute;
   content: "";
   height: 1px;
@@ -240,20 +243,20 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.offer-wrap .offer-carousel .offers .item .content > .link:hover::before {
+.page-wrapper .offer-wrap .offer-carousel .offers .item .content > .link:hover::before {
   left: 100%;
 }
 @media screen and (max-width: 900px) {
-  .offer-wrap .offer-carousel .offers {
+  .page-wrapper .offer-wrap .offer-carousel .offers {
     grid-auto-columns: calc(50% - 9px);
   }
 }
 @media screen and (max-width: 600px) {
-  .offer-wrap .offer-carousel .offers {
+  .page-wrapper .offer-wrap .offer-carousel .offers {
     grid-auto-columns: 100%;
   }
 }
-.offer-wrap .offer-carousel .arrow .icon {
+.page-wrapper .offer-wrap .offer-carousel .arrow .icon {
   position: absolute;
   display: flex;
   align-items: center;
@@ -261,13 +264,13 @@ nav ol li a {
   transform: translateY(-50%);
   justify-content: center;
 }
-.offer-wrap .offer-carousel .arrow .icon.left {
+.page-wrapper .offer-wrap .offer-carousel .arrow .icon.left {
   left: -25px;
 }
-.offer-wrap .offer-carousel .arrow .icon.right {
+.page-wrapper .offer-wrap .offer-carousel .arrow .icon.right {
   right: -25px;
 }
-.offer-wrap .offer-carousel .arrow .icon i {
+.page-wrapper .offer-wrap .offer-carousel .arrow .icon i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -281,12 +284,11 @@ nav ol li a {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s eaes 0s;
 }
-.offer-wrap .offer-carousel .arrow .icon i:hover {
+.page-wrapper .offer-wrap .offer-carousel .arrow .icon i:hover {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
-
-.service-wrap .services {
+.page-wrapper .service-wrap .services {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   -moz-column-gap: 20px;
@@ -294,7 +296,7 @@ nav ol li a {
   row-gap: 30px;
   padding: 40px 0;
 }
-.service-wrap .services .service {
+.page-wrapper .service-wrap .services .service {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   /* background-color: #222; */
   border-radius: 8px;
@@ -304,7 +306,7 @@ nav ol li a {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
-.service-wrap .services .service::before {
+.page-wrapper .service-wrap .services .service::before {
   position: absolute;
   content: "";
   height: 4px;
@@ -315,25 +317,25 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.service-wrap .services .service:hover {
+.page-wrapper .service-wrap .services .service:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.service-wrap .services .service:hover::before {
+.page-wrapper .service-wrap .services .service:hover::before {
   width: 100%;
 }
-.service-wrap .services .service:hover .icon i {
+.page-wrapper .service-wrap .services .service:hover .icon i {
   border: 3px solid #ff5757;
   color: #ff5757;
 }
-.service-wrap .services .service:hover .content .name .link {
+.page-wrapper .service-wrap .services .service:hover .content .name .link {
   color: #cb6ce6;
 }
-.service-wrap .services .service .icon {
+.page-wrapper .service-wrap .services .service .icon {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
-.service-wrap .services .service .icon i {
+.page-wrapper .service-wrap .services .service .icon i {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -346,23 +348,23 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.service-wrap .services .service .content {
+.page-wrapper .service-wrap .services .service .content {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.service-wrap .services .service .content .name .link {
+.page-wrapper .service-wrap .services .service .content .name .link {
   color: #444;
   font-size: 28px;
   margin-bottom: 16px;
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.service-wrap .services .service .content .txt {
+.page-wrapper .service-wrap .services .service .content .txt {
   text-align: center;
 }
-.service-wrap .services .service .content > .link {
+.page-wrapper .service-wrap .services .service .content > .link {
   display: flex;
   align-items: center;
   -moz-column-gap: 8px;
@@ -375,10 +377,10 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.service-wrap .services .service .content > .link:hover {
+.page-wrapper .service-wrap .services .service .content > .link:hover {
   letter-spacing: 0.8px;
 }
-.service-wrap .services .service .content > .link::before {
+.page-wrapper .service-wrap .services .service .content > .link::before {
   position: absolute;
   content: "";
   height: 1px;
@@ -390,11 +392,10 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.service-wrap .services .service .content > .link:hover::before {
+.page-wrapper .service-wrap .services .service .content > .link:hover::before {
   left: 100%;
 }
-
-.universities-wrap .universities {
+.page-wrapper .universities-wrap .universities {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   -moz-column-gap: 30px;
@@ -402,7 +403,7 @@ nav ol li a {
   row-gap: 36px;
   padding: 40px 0;
 }
-.universities-wrap .universities .item {
+.page-wrapper .universities-wrap .universities .item {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   overflow: hidden;
@@ -410,18 +411,18 @@ nav ol li a {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
-.universities-wrap .universities .item:hover {
+.page-wrapper .universities-wrap .universities .item:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.universities-wrap .universities .item:hover .image img {
+.page-wrapper .universities-wrap .universities .item:hover .image img {
   transform: scale(1.2);
 }
-.universities-wrap .universities .item .image {
+.page-wrapper .universities-wrap .universities .item .image {
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
-.universities-wrap .universities .item .image img {
+.page-wrapper .universities-wrap .universities .item .image img {
   width: 100%;
   max-height: 180px;
   height: 100%;
@@ -430,16 +431,16 @@ nav ol li a {
   transition: all 0.8s ease 0s;
   -webkit-transition: all 0.8s ease 0s;
 }
-.universities-wrap .universities .item .content {
+.page-wrapper .universities-wrap .universities .item .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px 8px;
 }
-.universities-wrap .universities .item .content .name {
+.page-wrapper .universities-wrap .universities .item .content .name {
   margin-bottom: 0;
 }
-.universities-wrap .universities .item .content .name .link {
+.page-wrapper .universities-wrap .universities .item .content .name .link {
   display: flex;
   color: #444;
   font-size: 18px;
@@ -447,7 +448,7 @@ nav ol li a {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
-.universities-wrap .universities .item .content .name .link:hover {
+.page-wrapper .universities-wrap .universities .item .content .name .link:hover {
   color: #cb6ce6;
   letter-spacing: 0.5px;
 }

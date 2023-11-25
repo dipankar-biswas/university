@@ -225,6 +225,9 @@ select:focus-within {
   padding: 6px 12px;
   display: block;
 }
+#apps footer {
+  overflow: hidden;
+}
 #apps footer .footer-middle {
   background: #f2f2f2;
 }
